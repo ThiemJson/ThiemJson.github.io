@@ -1,10 +1,8 @@
 <?php
-// Database configuration
-$ADDRESS = "localhost/BTL/baitaploncongngheweb/";
 // DB DEPLOY
 $dbHost     = "hwr4wkxs079mtb19.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $dbUsername = "j1zppqr8nhkm22lq";
-$dbPassword = "lmmee82ne2p37vlu ";
+$dbPassword = "lmmee82ne2p37vlu";
 $dbName     = "wa2ksasaawfrc3w8";
 $port       = 3306;
 
