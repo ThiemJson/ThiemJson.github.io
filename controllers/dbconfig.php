@@ -2,10 +2,10 @@
 // Database configuration
 $ADDRESS = "localhost/BTL/baitaploncongngheweb/";
 // DB DEPLOY
-$dbHost     = "phtfaw4p6a970uc0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$dbUsername = "v3erjmr9xi3m0p28";
-$dbPassword = "jec7ahxw939mwula";
-$dbName     = "k7omxaagy6biszyy";
+$dbHost     = "hwr4wkxs079mtb19.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$dbUsername = "j1zppqr8nhkm22lq";
+$dbPassword = "lmmee82ne2p37vlu ";
+$dbName     = "wa2ksasaawfrc3w8";
 $port       = 3306;
 
 // DB for testing
