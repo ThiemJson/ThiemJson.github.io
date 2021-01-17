@@ -38,7 +38,7 @@
     $klDatas = mysqli_fetch_all($result);
 
     // Fetch all 
-    $sql_query = "SELECT skill.id, skillcategory.name, skill.description FROM skill, skillcategory WHERE skill.skillcatgory = skillcategory.id";
+    $sql_query = "SELECT skill.id, skillcategory.id, skillcategory.name, skill.description FROM skill, skillcategory WHERE skill.skillcatgory = skillcategory.id";
     $result = mysqli_query($conn,$sql_query);
     $skillDatas = mysqli_fetch_all($result);
 ?>

@@ -371,6 +371,7 @@ include('../controllers/read-skill.php');
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Category ID</th>
                             <th>Skill Category</th>
                             <th>Description</th>
                             <th>Action</th>
@@ -384,6 +385,7 @@ include('../controllers/read-skill.php');
                                 <td><?php echo $skillData[0] ?></td>
                                 <td><?php echo $skillData[1] ?></td>
                                 <td><?php echo $skillData[2] ?></td>
+                                <td><?php echo $skillData[3] ?></td>
                                 <td>
                                     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Edit"></i></a>
                                     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Delete"></i></a>
@@ -412,7 +414,7 @@ include('../controllers/read-skill.php');
                             <input name="skill-id" type="text" class="form-control" required="" readonly="true">
                         </div>
                         <div class="form-group">
-                            <label>Skill Category</label>
+                            <label>Skill Category ID</label>
                             <input name="skill-category" type="text" class="form-control" required="">
                         </div>
                         <div class="form-group">
@@ -443,7 +445,7 @@ include('../controllers/read-skill.php');
                             <input name="skill-id" type="text" class="form-control" required="" readonly="true">
                         </div>
                         <div class="form-group">
-                            <label>Skill Category</label>
+                            <label>Skill Category ID</label>
                             <input name="skill-category" type="text" class="form-control" required="">
                         </div>
                         <div class="form-group">
