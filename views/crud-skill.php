@@ -490,7 +490,7 @@ include('../controllers/read-skill.php');
             const id = this.parentElement.parentElement.children[0].innerHTML;
             $('#editEmployeeModal div div [name="skill-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
             $('#editEmployeeModal div div [name="skill-category"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
-            $('#editEmployeeModal div div [name="skill-description"]').attr('value', this.parentElement.parentElement.children[2].innerHTML);
+            $('#editEmployeeModal div div [name="skill-description"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
         })
     })
 </script>
