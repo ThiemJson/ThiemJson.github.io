@@ -363,7 +363,6 @@ include('../controllers/read-experiens.php');
                         </div>
                         <div class="col-sm-6">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
                         </div>
                     </div>
                 </div>
@@ -544,10 +543,56 @@ include('../controllers/read-experiens.php');
     <div id="deleteEmployeeModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form action="../controllers/process-exp.php" method="post">
                     <div class="modal-header">
-                        <h4 class="modal-title">Delete Employee</h4>
+                        <h4 class="modal-title">Delete Infomation</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" name="exp-id" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Job</label>
+                            <input type="text" name="exp-job" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Possiton</label>
+                            <input type="text" name="exp-possition" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Start date</label>
+                            <input type="text" name="exp-start-date" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>End date</label>
+                            <input type="text" name="exp-end-date" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Project</label>
+                            <input type="text" name="exp-project" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input type="text" name="exp-description" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Team size</label>
+                            <input type="text" name="exp-team-size" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Responsiblities</label>
+                            <input type="text" name="exp-respon" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Accomplishments</label>
+                            <input type="text" name="exp-acc" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Technologies</label>
+                            <input type="text" name="exp-tech" class="form-control" required="" readonly="true">
+                        </div>
                     </div>
                     <div class="modal-body">
                         <p>Are you sure you want to delete these Records?</p>
@@ -555,7 +600,7 @@ include('../controllers/read-experiens.php');
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-danger" value="Delete">
+                        <input name="button-del" type="submit" class="btn btn-danger" value="Delete">
                     </div>
                 </form>
             </div>
@@ -577,6 +622,21 @@ include('../controllers/read-experiens.php');
             $('#editEmployeeModal div div [name="exp-respon"]').attr('value', this.parentElement.parentElement.children[8].innerHTML);
             $('#editEmployeeModal div div [name="exp-acc"]').attr('value', this.parentElement.parentElement.children[9].innerHTML);
             $('#editEmployeeModal div div [name="exp-tech"]').attr('value', this.parentElement.parentElement.children[10].innerHTML);
+        })
+
+        $('a[href="#deleteEmployeeModal"]').click(function() {
+            const id = this.parentElement.parentElement.children[0].innerHTML;
+            $('#deleteEmployeeModal div div [name="exp-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-job"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-possition"]').attr('value', this.parentElement.parentElement.children[2].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-start-date"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-end-date"]').attr('value', this.parentElement.parentElement.children[4].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-project"]').attr('value', this.parentElement.parentElement.children[5].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-description"]').attr('value', this.parentElement.parentElement.children[6].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-team-size"]').attr('value', this.parentElement.parentElement.children[7].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-respon"]').attr('value', this.parentElement.parentElement.children[8].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-acc"]').attr('value', this.parentElement.parentElement.children[9].innerHTML);
+            $('#deleteEmployeeModal div div [name="exp-tech"]').attr('value', this.parentElement.parentElement.children[10].innerHTML);
         })
     })
 </script>

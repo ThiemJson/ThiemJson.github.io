@@ -362,14 +362,13 @@ include('../controllers/read-home.php');
 							<h2>Manage <b>Home info</b></h2>
 						</div>
 						<div class="col-sm-6">
-							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
 						</div>
 					</div>
 				</div>
 				<table class="table table-striped table-hover">
 					<thead>
 						<tr>
+							<th>ID</th>
 							<th>Name</th>
 							<th>Slogan</th>
 							<th>Github</th>
@@ -381,6 +380,7 @@ include('../controllers/read-home.php');
 					</thead>
 					<tbody>
 						<tr>
+							<td><?php echo $homeData[0][0] ?></td>
 							<td><?php echo $homeData[0][1] ?></td>
 							<td><?php echo $homeData[0][2] ?></td>
 							<td><?php echo $homeData[0][3] ?></td>
@@ -389,7 +389,6 @@ include('../controllers/read-home.php');
 							<td><?php echo $homeData[0][6] ?></td>
 							<td>
 								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Edit"></i></a>
-								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Delete"></i></a>
 							</td>
 						</tr>
 					</tbody>
@@ -407,6 +406,10 @@ include('../controllers/read-home.php');
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					</div>
 					<div class="modal-body">
+						<div class="form-group">
+							<label>ID</label>
+							<input name="home-id" type="text" class="form-control" required="" value="<?php echo $homeData[0][0] ?>" readonly="true">
+						</div>
 						<div class="form-group">
 							<label>Name</label>
 							<input name="home-name" type="text" class="form-control" required="" value="<?php echo $homeData[0][1] ?>">

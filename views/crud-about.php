@@ -362,14 +362,13 @@ include('../controllers/read-about.php');
 							<h2>Manage <b>ABOUTs</b></h2>
 						</div>
 						<div class="col-sm-6">
-							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
 						</div>
 					</div>
 				</div>
 				<table class="table table-striped table-hover">
 					<thead>
 						<tr>
+							<th>ID</th>
 							<th>Image link</th>
 							<th>Summary</th>
 							<th>Location</th>
@@ -381,15 +380,15 @@ include('../controllers/read-about.php');
 					</thead>
 					<tbody>
 						<tr style="overflow:visible">
+							<td><?php echo $aboutData[0][0] ?></td>
 							<td><?php echo $aboutData[0][1] ?></td>
-							<td id="summary" ><?php print($aboutData[0][2]) ?></td>
+							<td id="summary"><?php print($aboutData[0][2]) ?></td>
 							<td><?php echo $aboutData[0][3] ?></td>
 							<td><?php echo $aboutData[0][4] ?></td>
 							<td><?php echo $aboutData[0][5] ?></td>
 							<td><?php echo $aboutData[0][6] ?></td>
 							<td>
 								<a href="#editEmployeeModal" .aboutData[0][0] class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Edit"></i></a>
-								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Delete"></i></a>
 							</td>
 						</tr>
 					</tbody>
@@ -446,10 +445,14 @@ include('../controllers/read-about.php');
 			<div class="modal-content">
 				<form action="../controllers/process-about.php" method="post">
 					<div class="modal-header">
-						<h4 class="modal-title">Add Infomation</h4>
+						<h4 class="modal-title">Edit Infomation</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					</div>
 					<div class="modal-body">
+						<div class="form-group">
+							<label>ID</label>
+							<input type="text" name="about-id" class="form-control" required="" value="<?php echo $aboutData[0][0] ?>" readonly="true">
+						</div>
 						<div class="form-group">
 							<label>Image link</label>
 							<input type="text" name="about-image-link" class="form-control" required="" value="<?php echo $aboutData[0][1] ?>">
@@ -463,7 +466,7 @@ include('../controllers/read-about.php');
 							<input type="text" name="about-location" class="form-control" required="" value="<?php echo $aboutData[0][3] ?>">
 						</div>
 						<script>
-							$(document).ready(function(){
+							$(document).ready(function() {
 								const content = $('#summary').html();
 								$('input[name="about-summary"]').val(content);
 							})

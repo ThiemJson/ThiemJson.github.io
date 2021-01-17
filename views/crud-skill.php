@@ -363,7 +363,6 @@ include('../controllers/read-skill.php');
                         </div>
                         <div class="col-sm-6">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
                         </div>
                     </div>
                 </div>
@@ -423,7 +422,7 @@ include('../controllers/read-skill.php');
                         </div>
                         <div class="modal-footer">
                             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                            <input name = "button-add" type="submit" class="btn btn-info" value="Save">
+                            <input name="button-add" type="submit" class="btn btn-info" value="Save">
                         </div>
                     </div>
                 </form>
@@ -465,10 +464,24 @@ include('../controllers/read-skill.php');
     <div id="deleteEmployeeModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form action="../controllers/process-skill.php" method="post">
                     <div class="modal-header">
-                        <h4 class="modal-title">Delete Employee</h4>
+                        <h4 class="modal-title">Delete Infomation</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input name="skill-id" type="text" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Skill Category ID</label>
+                            <input name="skill-category" type="text" class="form-control" required="" readonly="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input name="skill-description" type="text" class="form-control" required="" readonly="true">
+                        </div>
                     </div>
                     <div class="modal-body">
                         <p>Are you sure you want to delete these Records?</p>
@@ -476,7 +489,7 @@ include('../controllers/read-skill.php');
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <input type="submit" class="btn btn-danger" value="Delete">
+                        <input name="button-del" type="submit" class="btn btn-danger" value="Delete">
                     </div>
                 </form>
             </div>
@@ -491,6 +504,12 @@ include('../controllers/read-skill.php');
             $('#editEmployeeModal div div [name="skill-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
             $('#editEmployeeModal div div [name="skill-category"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
             $('#editEmployeeModal div div [name="skill-description"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
+        })
+        $('a[href="#deleteEmployeeModal"]').click(function() {
+            const id = this.parentElement.parentElement.children[0].innerHTML;
+            $('#deleteEmployeeModal div div [name="skill-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
+            $('#deleteEmployeeModal div div [name="skill-category"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
+            $('#deleteEmployeeModal div div [name="skill-description"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
         })
     })
 </script>

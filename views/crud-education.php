@@ -363,7 +363,6 @@ include('../controllers/read-education.php');
 						</div>
 						<div class="col-sm-6">
 							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
 						</div>
 					</div>
 				</div>
@@ -493,10 +492,36 @@ include('../controllers/read-education.php');
 	<div id="deleteEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form>
+				<form action="../controllers/process-education.php" method="post">
 					<div class="modal-header">
-						<h4 class="modal-title">Delete Employee</h4>
+						<h4 class="modal-title">Delete Infomation</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>ID</label>
+							<input type="text" name="edu-id" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Certificate</label>
+							<input type="text" name="edu-certificate" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Location</label>
+							<input type="text" name="edu-location" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Orther</label>
+							<input type="text" name="edu-orther" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Start date</label>
+							<input type="text" name="edu-start-date" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>End date</label>
+							<input type="text" name="edu-end-date" class="form-control" required="" readonly="true">
+						</div>
 					</div>
 					<div class="modal-body">
 						<p>Are you sure you want to delete these Records?</p>
@@ -504,7 +529,7 @@ include('../controllers/read-education.php');
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" class="btn btn-danger" value="Delete">
+						<input name="button-del" type="submit" class="btn btn-danger" value="Delete">
 					</div>
 				</form>
 			</div>
@@ -522,6 +547,16 @@ include('../controllers/read-education.php');
 			$('#editEmployeeModal div div [name="edu-orther"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
 			$('#editEmployeeModal div div [name="edu-start-date"]').attr('value', this.parentElement.parentElement.children[4].innerHTML);
 			$('#editEmployeeModal div div [name="edu-end-date"]').attr('value', this.parentElement.parentElement.children[5].innerHTML);
+		})
+
+		$('a[href="#deleteEmployeeModal"]').click(function() {
+			const id = this.parentElement.parentElement.children[0].innerHTML;
+			$('#deleteEmployeeModal div div [name="edu-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
+			$('#deleteEmployeeModal div div [name="edu-certificate"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
+			$('#deleteEmployeeModal div div [name="edu-location"]').attr('value', this.parentElement.parentElement.children[2].innerHTML);
+			$('#deleteEmployeeModal div div [name="edu-orther"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
+			$('#deleteEmployeeModal div div [name="edu-start-date"]').attr('value', this.parentElement.parentElement.children[4].innerHTML);
+			$('#deleteEmployeeModal div div [name="edu-end-date"]').attr('value', this.parentElement.parentElement.children[5].innerHTML);
 		})
 	})
 </script>

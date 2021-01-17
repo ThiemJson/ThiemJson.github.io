@@ -363,7 +363,6 @@ include('../controllers/read-pet.php');
 						</div>
 						<div class="col-sm-6">
 							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New</span></a>
-							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons"></i> <span>Delete</span></a>
 						</div>
 					</div>
 				</div>
@@ -438,7 +437,7 @@ include('../controllers/read-pet.php');
 	<div id="editEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-			<form action="../controllers/progess-pet.php" method="post">
+				<form action="../controllers/progess-pet.php" method="post">
 					<div class="modal-header">
 						<h4 class="modal-title">Add Infomation</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -473,10 +472,28 @@ include('../controllers/read-pet.php');
 	<div id="deleteEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form>
+				<form action="../controllers/progess-pet.php" method="post">
 					<div class="modal-header">
-						<h4 class="modal-title">Delete Employee</h4>
+						<h4 class="modal-title">Delete Infomation</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>ID</label>
+							<input name="pet-id" type="text" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Name</label>
+							<input name="pet-name" type="text" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Description</label>
+							<input name="pet-description" type="text" class="form-control" required="" readonly="true">
+						</div>
+						<div class="form-group">
+							<label>Tecnologies</label>
+							<input name="pet-tech" type="text" class="form-control" required="" readonly="true">
+						</div>
 					</div>
 					<div class="modal-body">
 						<p>Are you sure you want to delete these Records?</p>
@@ -484,7 +501,7 @@ include('../controllers/read-pet.php');
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" class="btn btn-danger" value="Delete">
+						<input name="button-del" type="submit" class="btn btn-danger" value="Delete">
 					</div>
 				</form>
 			</div>
@@ -500,6 +517,13 @@ include('../controllers/read-pet.php');
 			$('#editEmployeeModal div div [name="pet-name"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
 			$('#editEmployeeModal div div [name="pet-description"]').attr('value', this.parentElement.parentElement.children[2].innerHTML);
 			$('#editEmployeeModal div div [name="pet-tech"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
+		})
+		$('a[href="#deleteEmployeeModal"]').click(function() {
+			const id = this.parentElement.parentElement.children[0].innerHTML;
+			$('#deleteEmployeeModal div div [name="pet-id"]').attr('value', this.parentElement.parentElement.children[0].innerHTML);
+			$('#deleteEmployeeModal div div [name="pet-name"]').attr('value', this.parentElement.parentElement.children[1].innerHTML);
+			$('#deleteEmployeeModal div div [name="pet-description"]').attr('value', this.parentElement.parentElement.children[2].innerHTML);
+			$('#deleteEmployeeModal div div [name="pet-tech"]').attr('value', this.parentElement.parentElement.children[3].innerHTML);
 		})
 	})
 </script>

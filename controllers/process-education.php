@@ -31,3 +31,14 @@ if ($_POST['button-edit']) {
     header("location: ../views/crud-education.php");
     return;
 }
+
+if ($_POST['button-del']) {
+    $id = $_POST['edu-id'];
+    $idInt = (int)$id;
+    
+    $sql_query = "DELETE FROM education WHERE id = $idInt ";
+    $result = mysqli_query($conn, $sql_query);
+
+    header("location: ../views/crud-education.php");
+    return;
+}

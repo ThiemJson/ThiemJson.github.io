@@ -27,3 +27,14 @@ if ($_POST['button-edit']) {
     header("location: ../views/crud-pet.php");
     return;
 }
+
+if ($_POST['button-del']) {
+    $id = $_POST['pet-id'];
+    $idInt = (int)$id;
+
+    $sql_query = "DELETE FROM pet WHERE id = $idInt ";
+    $result = mysqli_query($conn, $sql_query);
+
+    header("location: ../views/crud-pet.php");
+    return;
+}

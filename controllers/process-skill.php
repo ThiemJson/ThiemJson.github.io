@@ -26,3 +26,15 @@ if ($_POST['button-edit']) {
     header("location: ../views/crud-skill.php");
     return;
 }
+
+
+if ($_POST['button-del']) {
+    $id = $_POST['skill-id'];
+    $idInt = (int)$id;
+
+    $sql_query = "DELETE FROM skill WHERE id = $idInt ";
+    $result = mysqli_query($conn, $sql_query);
+
+    header("location: ../views/crud-skill.php");
+    return;
+}
