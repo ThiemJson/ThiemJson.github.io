@@ -7,11 +7,11 @@ $dbName     = "wa2ksasaawfrc3w8";
 $port       = 3306;
 
 // DB for testing
-$dbHost     = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName     = "CV";
-$port       = 80;
+// $dbHost     = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "";
+// $dbName     = "CV";
+// $port       = 80;
 
 
 // Create database connection
