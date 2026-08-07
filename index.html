@@ -33,13 +33,23 @@
       .apps-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin: 72px 0 24px; }
       .apps-heading h3 { font: 800 clamp(28px, 4vw, 42px)/1.1 "Manrope", sans-serif; letter-spacing: -.04em; margin: 0; }
       .apps-heading p { color: #5e6977; max-width: 430px; margin: 0; }
-      .app-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
       .app-card { min-height: 235px; padding: 24px; border: 1px solid #e2e7ec; border-radius: 20px; color: #07111f; text-decoration: none; display: flex; flex-direction: column; background: #f6f8fa; transition: transform .2s, box-shadow .2s; }
       .app-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(7,17,31,.09); }
       .app-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: var(--app-color, #4d70ff); color: #fff; font: 800 20px "Manrope", sans-serif; margin-bottom: auto; }
+      .app-icon-img, .featured-app-icon { object-fit: cover; border-radius: 22%; box-shadow: 0 10px 25px rgba(7,17,31,.14); }
+      .app-icon-img { width: 68px; height: 68px; margin-bottom: auto; }
+      .featured-app-icon { width: 82px; height: 82px; margin-bottom: 22px; }
+      .project-link { margin-top: 24px; color: #7cf7c8; text-decoration: none; font-weight: 700; }
+      .app-showcase { background: linear-gradient(145deg, #e9f0ff, #b9cafc); }
+      .app-showcase img { width: 150px; height: 150px; object-fit: cover; border-radius: 28%; box-shadow: 0 24px 52px rgba(31,57,128,.24); }
+      .project .project-link { color: #4d70ff; }
+      .project-featured .project-link { color: #7cf7c8; }
+      .project-wide { grid-column: 1 / -1; display: grid; grid-template-columns: .85fr 1.15fr; min-height: 360px; }
+      .project-wide .project-art { height: auto; min-height: 320px; }
       .app-card h4 { font: 700 18px/1.25 "Manrope", sans-serif; margin: 24px 0 8px; }
       .app-card p { color: #5e6977; font-size: 13px; line-height: 1.5; margin: 0; }
-      @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(2, 1fr); } .project-wide { display: flex; } .project-wide .project-art { min-height: 260px; } }
       @media (max-width: 600px) { .apps-heading { align-items: start; flex-direction: column; } .app-grid { grid-template-columns: 1fr; } .app-card { min-height: 205px; } }
     </style>
   </head>
@@ -149,25 +159,21 @@
 
       <section class="section container" id="work">
         <div class="section-label reveal"><span>03</span> Selected work</div>
-        <div class="section-heading-row reveal"><h2 class="section-title">Products in the real world.</h2><p>Selected applications from connected devices, privacy utilities and independent releases.</p></div>
+        <div class="section-heading-row reveal"><h2 class="section-title">Products in the real world.</h2><p>Two products I actively build, operate and grow beyond the app stores.</p></div>
         <div class="project-grid">
           <article class="project project-featured reveal">
-            <div class="project-copy"><div class="project-number">01 / PRIVACY</div><h3>Privault</h3><p>A local-first private vault for photos, videos, documents and encrypted backups. No account. No cloud storage.</p><div class="project-tags"><span>iOS</span><span>Android</span><span>Biometrics</span><span>Privacy</span></div></div>
+            <div class="project-copy"><img class="featured-app-icon" src="images/apps/privault.png" alt="Privault app icon" /><div class="project-number">01 / PRIVACY</div><h3>Privault</h3><p>A local-first private vault for photos, videos, documents and encrypted backups. No account. No cloud storage.</p><div class="project-tags"><span>iOS</span><span>Android</span><span>Biometrics</span><span>Privacy</span></div><a class="project-link" href="https://www.privaultapp.store/" target="_blank" rel="noreferrer">Visit Privault ↗</a></div>
             <div class="phone-mockup"><div class="phone-screen"><div class="mock-status"><span>9:41</span><span>● ●</span></div><div class="mock-lock">⌾</div><h4>Your private space.</h4><p>Protected on this device</p><div class="mock-folders"><i></i><i></i><i></i></div></div></div>
           </article>
-          <article class="project reveal"><div class="project-art smart-home"><span class="house">⌂</span><span class="signal">)))</span></div><div class="project-copy"><div class="project-number">02 / IOT</div><h3>ONE Home</h3><p>Connect, monitor and remotely control smart-home devices and security cameras.</p><div class="project-tags"><span>iOS</span><span>IoT</span><span>IP Camera</span></div></div></article>
-          <article class="project reveal"><div class="project-art network"><span>ONE</span><div class="network-lines"></div></div><div class="project-copy"><div class="project-number">03 / NETWORK</div><h3>ONE Link</h3><p>Quick, approachable Wi-Fi and access-point management for VNPT customers.</p><div class="project-tags"><span>UIKit</span><span>Networking</span><span>Devices</span></div></div></article>
+          <article class="project project-wide reveal"><div class="project-art app-showcase"><img src="images/apps/attendmate.png" alt="AttendMate app icon" /></div><div class="project-copy"><div class="project-number">02 / EDUCATION</div><h3>AttendMate</h3><p>A focused attendance and timetable companion that helps students track classes, schedules and attendance with less friction.</p><div class="project-tags"><span>Mobile</span><span>Education</span><span>Product</span></div><a class="project-link" href="https://thiemjason-work.site/attendmate-website/" target="_blank" rel="noreferrer">Visit AttendMate ↗</a></div></article>
         </div>
-        <div class="apps-heading reveal"><h3>More independent apps.</h3><p>A selection of utility, education, productivity and creative apps released across the App Store and Google Play.</p></div>
+        <div class="apps-heading reveal"><h3>Signature apps.</h3><p>Products I designed and shipped across productivity, developer tools, education, privacy and news.</p></div>
         <div class="app-grid">
-          <a class="app-card reveal" style="--app-color:#6c5ce7" href="https://apps.apple.com/in/app/mathematics-quiz-pdf/id6497404071" target="_blank" rel="noreferrer"><span class="app-icon">∑</span><h4>Mathematics: Quiz &amp; PDF</h4><p>Interactive quizzes and PDF tools for learning mathematics.</p></a>
-          <a class="app-card reveal" style="--app-color:#f39c12" href="https://apps.apple.com/in/app/sound-trainer-listen-better/id6497068502" target="_blank" rel="noreferrer"><span class="app-icon">♫</span><h4>Sound Trainer</h4><p>Ear-training exercises designed to improve critical listening skills.</p></a>
-          <a class="app-card reveal" style="--app-color:#16a085" href="https://apps.apple.com/in/app/server-sentinel-pinger/id6499138893" target="_blank" rel="noreferrer"><span class="app-icon">⌁</span><h4>Server Sentinel</h4><p>Host monitoring, health status and real-time server notifications.</p></a>
-          <a class="app-card reveal" style="--app-color:#e84393" href="https://apps.apple.com/in/app/tuner-trainer-beyond-limits/id6498151536" target="_blank" rel="noreferrer"><span class="app-icon">Hz</span><h4>Tuner Trainer</h4><p>A tuner for exploring xenharmonic and microtonal music.</p></a>
-          <a class="app-card reveal" style="--app-color:#0984e3" href="https://apps.apple.com/in/app/gradient-creator-flutter-tool/id6499068488" target="_blank" rel="noreferrer"><span class="app-icon">◐</span><h4>Gradient Creator</h4><p>A practical gradient and color-generation tool for Flutter creators.</p></a>
-          <a class="app-card reveal" style="--app-color:#00b894" href="https://apps.apple.com/in/app/habit-crafter/id6496008622" target="_blank" rel="noreferrer"><span class="app-icon">✓</span><h4>Habit Crafter</h4><p>Personal goals, tailored habits and everyday motivation.</p></a>
-          <a class="app-card reveal" style="--app-color:#d63031" href="https://apps.apple.com/in/app/motion-sensor-json-csv/id6499396038" target="_blank" rel="noreferrer"><span class="app-icon">↗</span><h4>Motion Sensor</h4><p>Record sensor data up to 200Hz and export it to JSON or CSV.</p></a>
-          <a class="app-card reveal" style="--app-color:#2d3436" href="https://play.google.com/store/apps/details?id=com.thiemjason.fastEncrypt" target="_blank" rel="noreferrer"><span class="app-icon">RSA</span><h4>FastEncrypt</h4><p>Simple RSA encryption and decryption for sensitive text.</p></a>
+          <a class="app-card reveal" href="https://apps.apple.com/in/app/logcat-analyzer-debug-toolkit/id6764280965" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/logcat.webp" alt="Logcat Analyzer app icon" /><h4>Logcat Analyzer</h4><p>A mobile debugging toolkit for inspecting, filtering and understanding logs.</p></a>
+          <a class="app-card reveal" href="https://apps.apple.com/in/app/docsy-document-scanner/id6765682727" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/docsy.webp" alt="Docsy app icon" /><h4>Docsy</h4><p>A fast document scanner for capturing and organizing documents on the go.</p></a>
+          <a class="app-card reveal" href="https://apps.apple.com/in/app/math-riddles-iq-brain-boost/id6502156385" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/math-riddles.webp" alt="Math Riddles app icon" /><h4>Math Riddles</h4><p>IQ puzzles and mathematical challenges designed to sharpen the brain.</p></a>
+          <a class="app-card reveal" href="https://play.google.com/store/apps/details?id=com.thiemjason.news.vn" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/vn-news.webp" alt="Tin Tức Việt Nam app icon" /><h4>Tin Tức Việt Nam</h4><p>A streamlined news reader bringing popular Vietnamese sources together.</p></a>
+          <a class="app-card reveal" href="https://apps.apple.com/in/app/flutter-tools-ui-builder-pro/id6499068488" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/flutter-tools.webp" alt="Flutter Tools app icon" /><h4>Flutter Tools</h4><p>A visual UI builder and practical toolkit for creating Flutter interfaces faster.</p></a>
         </div>
         <div class="store-links reveal">
           <a class="button primary" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noreferrer">View all iOS apps <span>↗</span></a>
