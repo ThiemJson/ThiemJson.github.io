@@ -1,256 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta name="google-site-verification" content="HWHcY2hjisWw0UVMd49Ik7REdDkz0b8mpNjaamKFl-A" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9031583899744313"
-     crossorigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-9031583899744313">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8" />
-    <!--[if IE
-      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
-    /><![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nguyễn Cao Thiêm - Mobile Developer Resume</title>
-    <!-- Default style sheets -->
+    <meta name="google-site-verification" content="HWHcY2hjisWw0UVMd49Ik7REdDkz0b8mpNjaamKFl-A" />
+    <meta name="google-adsense-account" content="ca-pub-9031583899744313" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9031583899744313" crossorigin="anonymous"></script>
+    <meta name="description" content="Portfolio of Cao Thiem Nguyen, an iOS and mobile developer based in Hanoi." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Cao Thiem Nguyen — iOS &amp; Mobile Developer</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="index_files/css.css" rel="stylesheet" />
-    <link rel="stylesheet" href="index_files/dist.css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://use.fontawesome.com/303a8145d6.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index_files/portfolio.css" />
+    <style>
+      html, body { overflow-x: hidden; }
+      .portrait-monogram { position: relative; z-index: 2; width: 100%; height: 100%; display: grid; place-items: center; border-radius: 210px 210px 28px 28px; background: radial-gradient(circle at 68% 24%, rgba(255,255,255,.82), transparent 22%), linear-gradient(145deg, #dce7ff, #9df4d1); overflow: hidden; }
+      .portrait-monogram::before, .portrait-monogram::after { content: ""; position: absolute; border: 1px solid rgba(7,17,31,.12); border-radius: 50%; }
+      .portrait-monogram::before { width: 330px; height: 330px; right: -145px; top: -70px; box-shadow: 0 0 0 55px rgba(255,255,255,.13); }
+      .portrait-monogram::after { width: 220px; height: 220px; left: -100px; bottom: -35px; box-shadow: 0 0 0 40px rgba(77,112,255,.07); }
+      .portrait-monogram span { position: relative; z-index: 1; font: 800 clamp(76px, 10vw, 138px)/1 "Manrope", sans-serif; letter-spacing: -.1em; color: #07111f; transform: translateX(-.05em); }
+      .portrait-monogram span i { color: #4d70ff; font-style: normal; }
+      .store-links { display: flex; gap: 12px; flex-wrap: wrap; margin: 30px 0 0; }
+      .store-link { display: inline-flex; align-items: center; gap: 12px; padding: 13px 18px; border: 1px solid #dce2e8; border-radius: 15px; color: #07111f; text-decoration: none; background: #fff; font-weight: 700; transition: transform .2s, border-color .2s; }
+      .store-link:hover { transform: translateY(-2px); border-color: #4d70ff; }
+      .store-link b { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: #07111f; color: #7cf7c8; }
+      .store-link small { display: block; color: #5e6977; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; line-height: 1.2; }
+      .store-link span { line-height: 1.3; }
+      .apps-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin: 72px 0 24px; }
+      .apps-heading h3 { font: 800 clamp(28px, 4vw, 42px)/1.1 "Manrope", sans-serif; letter-spacing: -.04em; margin: 0; }
+      .apps-heading p { color: #5e6977; max-width: 430px; margin: 0; }
+      .app-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .app-card { min-height: 235px; padding: 24px; border: 1px solid #e2e7ec; border-radius: 20px; color: #07111f; text-decoration: none; display: flex; flex-direction: column; background: #f6f8fa; transition: transform .2s, box-shadow .2s; }
+      .app-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(7,17,31,.09); }
+      .app-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: var(--app-color, #4d70ff); color: #fff; font: 800 20px "Manrope", sans-serif; margin-bottom: auto; }
+      .app-card h4 { font: 700 18px/1.25 "Manrope", sans-serif; margin: 24px 0 8px; }
+      .app-card p { color: #5e6977; font-size: 13px; line-height: 1.5; margin: 0; }
+      @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 600px) { .apps-heading { align-items: start; flex-direction: column; } .app-grid { grid-template-columns: 1fr; } .app-card { min-height: 205px; } }
+    </style>
   </head>
-
-  <body
-    class="homepage ver-one"
-    data-spy="scroll"
-    data-target=".main-navigation"
-  >
-    <header id="site-header">
-      <nav
-        id="site-navigation"
-        class="main-navigation side-static"
-        role="navigation"
-      >
-        <div class="navigation-header">
-          <a href="#" class="logo"
-            ><img src="images/site-logo.png" alt="Signature" class="site-logo"
-          /></a>
-          <button class="menu-switch">
-            <i class="fa fa-bars"></i>
-          </button>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Cao Thiem Nguyen — home">CT<span>.</span></a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#work">Work</a>
+          <a href="#education">Education</a>
+          <a class="nav-cta" href="mailto:nguyencaothiem@gmail.com">Let's talk <span>↗</span></a>
         </div>
-        <!-- /.navigation-header -->
-        <ul class="nav navigation">
-          <li class="item active">
-            <a href="#site-header" class="fa-home">Home</a>
-          </li>
-          <li class="item"><a href="#about" class="fa-user">About</a></li>
-          <li class="item"><a href="#skills" class="fa-signal">Skills</a></li>
-          <li class="item">
-            <a href="#experiences" class="fa-bar-chart-o">Experiences</a>
-          </li>
-          <li class="item">
-            <a href="#education" class="fa-book">Education</a>
-          </li>
-          <li class="item">
-            <a href="views/login.php" class="fa-cog">CV Setting</a>
-          </li>
-        </ul>
-        <!-- /.navigation -->
       </nav>
-      <!-- /#site-navigation -->
-      <div
-        id="banner"
-        class="transparent-section"
-        data-image="images/header-bg.jpeg"
-        data-color="26, 188, 156"
-        data-transparency="0.80"
-        style="
-          height: 726px;
-          background-image: url('images/header-bg.jpg');
-          background-color: rgb(26, 188, 156);
-          background-position: 50% 0px;
-        "
-      >
-        <div
-          class="transparent-content parallax-style"
-          style="
-            background-color: rgba(26, 188, 156, 0.8);
-            width: 100%;
-            height: 100%;
-          "
-        >
-          <div class="header-content">
-            <div class="container">
-              <div class="site-title">
-                <h1 class="site-name">
-                  I’m
-                </h1>
-              </div>
-              <!-- /.site-title -->
-              <!-- /.site-slogan-->
-              <div class="social-link">
-                <ul class="social-profiles">
-                  <li class="item">
-                    
-                  </li>
-                  <li class="item">
-                    
-                  </li>
-                  <li class="item">
-
-                  </li>
-                </ul>
-              </div>
-              <!-- /.social-link -->
-            </div>
-          </div>
-          <!-- /.header-content -->
-        </div>
-        <!-- /.transparent-content -->
-      </div>
-      <!-- /.transparent-section -->
     </header>
-    <!-- /#site-header -->
-    <section
-      id="about"
-      class="default-section"
-      data-scroll-reveal="enter from the bottom over .5s"
-    >
-      <div class="section-heading">
-        <h2 class="section-title">About me</h2>
-      </div>
-      <!-- /.section-heading -->
-      <div class="about-container">
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> Available for meaningful mobile projects</div>
+          <h1>I build mobile products that feel <em>effortless.</em></h1>
+          <p class="hero-lead">I'm Cao Thiem Nguyen, an iOS &amp; Mobile Developer in Hanoi crafting reliable applications across iOS, Android and Flutter.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work <span>↓</span></a>
+            <a class="button ghost" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
+          <div class="hero-metrics" aria-label="Career highlights">
+            <div><strong>6+</strong><span>Years in mobile</span></div>
+            <div><strong>80+</strong><span>Self apps released</span></div>
+            <div><strong>20K+</strong><span>Total downloads</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-orbit orbit-one"></div>
+            <div class="portrait-orbit orbit-two"></div>
+            <div class="portrait-monogram" aria-label="Cao Thiem Nguyen"><span>CT<i>.</i></span></div>
+            <div class="floating-card card-role"><span>⌘</span><div><small>Currently</small><strong>Mobile Developer</strong></div></div>
+            <div class="floating-card card-place"><span>⌖</span><div><small>Based in</small><strong>Hanoi, Vietnam</strong></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-strip" aria-label="Technology focus">
+        <div class="marquee">
+          <span>SWIFT</span><i>✦</i><span>UIKIT</span><i>✦</i><span>OBJECTIVE-C</span><i>✦</i><span>FLUTTER</span><i>✦</i><span>COMBINE</span><i>✦</i><span>CI/CD</span><i>✦</i>
+          <span aria-hidden="true">SWIFT</span><i aria-hidden="true">✦</i><span aria-hidden="true">UIKIT</span><i aria-hidden="true">✦</i><span aria-hidden="true">OBJECTIVE-C</span><i aria-hidden="true">✦</i><span aria-hidden="true">FLUTTER</span><i aria-hidden="true">✦</i><span aria-hidden="true">COMBINE</span><i aria-hidden="true">✦</i><span aria-hidden="true">CI/CD</span><i aria-hidden="true">✦</i>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-label reveal"><span>01</span> About me</div>
+        <div class="about-grid">
+          <h2 class="section-title reveal">Mobile engineering, from the first commit to the store.</h2>
+          <div class="about-copy reveal">
+            <p>I turn complex product requirements into focused, dependable mobile experiences. My work spans security cameras, smart-home and networking devices, social platforms, chat and voice/video calls, e-commerce and in-app payments.</p>
+            <p>I care about thoughtful architecture, performance, memory management and a smooth release process—from certificates and provisioning to Jenkins and Fastlane.</p>
+            <div class="skill-cloud">
+              <span>Swift</span><span>UIKit</span><span>Objective-C</span><span>Flutter</span><span>MVVM / MVC</span><span>Auto Layout</span><span>RTC / VoIP</span><span>Git</span><span>App Store</span><span>AdMob</span>
+            </div>
+            <div class="store-links">
+              <a class="store-link" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noreferrer"><b></b><span><small>Explore on</small>Apple App Store</span></a>
+              <a class="store-link" href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noreferrer"><b>▶</b><span><small>Explore on</small>Google Play</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
         <div class="container">
-          <div
-            class="col-md-3"
-            data-scroll-reveal="enter from the left after .5s"
-          >
-            <div class="profile-photo section-box">
-              <img
-                alt="Cao Thiem"
-                class="profile-image img-responsive"
-              />
-            </div>
-            <!-- /.profile-photo -->
+          <div class="section-label reveal"><span>02</span> Experience</div>
+          <div class="section-heading-row reveal">
+            <h2 class="section-title">Where I've made an impact.</h2>
+            <p>A career built across product teams, outsourcing projects and independent app development.</p>
           </div>
-          <div
-            class="col-md-6"
-            data-scroll-reveal="enter from the right after .5s"
-          >
-            <div class="profile-details section-box">
-              <h2 class="title">Summary</h2>
-              <div class="about-content">
-              </div>
-              <!-- /.about-content -->
-              <a
-                class="btn fa-download download-btn"
-                >My CV</a
-              >
-            </div>
-            <!-- /.profile-details -->
-          </div>
-          <div
-            class="col-md-3"
-            data-scroll-reveal="enter from the right after .5s"
-          >
-            <div class="profile-details section-box">
-              <h2 class="title">Contact Info</h2>
-              <address>
-                <ul class="address-line">
-                  <li class="fa-envelope">
-                    <a href="mailto:nguyencaothiem@gmail.com"
-                    >
-                  </li>
-                </ul>
-              </address>
-              <!-- /.contact-info -->
-            </div>
-            <!-- /.profile-details -->
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">SEP 2024 — NOW</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content"><div class="company-mark">N</div><div><h3>Mobile Developer</h3><h4>NTQ Solution JSC · Hanoi</h4><p>Building iOS, Android and Flutter products for company clients across social media, real-time chat and voice calls; delivering features, fixes and ongoing maintenance.</p></div></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">MAR — SEP 2024</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content"><div class="company-mark">R</div><div><h3>Middle iOS Developer</h3><h4>Rikkeisoft · Hanoi</h4><p>Delivered outsourced mobile solutions across smart home, e-commerce, social, chat, voice/video calling and payments.</p></div></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">SEP 2023 — MAY 2024</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content"><div class="company-mark">F</div><div><h3>Mobile Developer</h3><h4>Independent · Remote</h4><p>Built and released 80+ self-owned iOS, Android and Flutter applications, reaching more than 20,000 downloads.</p></div></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">JUL 2021 — MAR 2024</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content"><div class="company-mark">V</div><div><h3>iOS Developer</h3><h4>VNPT Technology · Hanoi</h4><p>Engineered mobile apps that connect, configure and control security cameras, smart-home devices and networking hardware.</p></div></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">SEP 2020 — AUG 2021</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content"><div class="company-mark">T</div><div><h3>Mobile Developer</h3><h4>Teneocto Technologies · Hanoi</h4><p>Started in iOS engineering with MVC/MVVM, then contributed to Japanese live-streaming and browser-game products.</p></div></div>
+            </article>
           </div>
         </div>
-      </div>
-      <!-- /.about-container -->
-    </section>
-    <!-- /#about -->
-    <section
-      id="skills"
-      class="default-section"
-      data-scroll-reveal="enter from the bottom over .5s"
-    >
-      <div class="section-heading">
-        <h2 class="section-title">SKILLS</h2>
-      </div>
-      <!-- /.section-heading -->
-      <div class="container">
-        <div class="skills-container">
-          <div
-            class="col-md-4"
-            data-scroll-reveal="enter from the left after .5s"
-          >
-            <div class="section-box">
-              <h2 class="box-title">Programming languages</h2>
-            </div>
-          </div>
-          <div
-            class="col-md-4"
-            data-scroll-reveal="enter from the right after .5s"
-          >
-            <div class="section-box">
-              <h2 class="box-title">Database</h2>
-            </div>
-          </div>
-          <div
-            class="col-md-4"
-            data-scroll-reveal="enter from the right after .5s"
-          >
-            <div class="section-box">
-              <h2 class="box-title">Foreign Language</h2>
-            </div>
-          </div>
-          <!-- /.skills-container -->
+      </section>
+
+      <section class="section container" id="work">
+        <div class="section-label reveal"><span>03</span> Selected work</div>
+        <div class="section-heading-row reveal"><h2 class="section-title">Products in the real world.</h2><p>Selected applications from connected devices, privacy utilities and independent releases.</p></div>
+        <div class="project-grid">
+          <article class="project project-featured reveal">
+            <div class="project-copy"><div class="project-number">01 / PRIVACY</div><h3>Privault</h3><p>A local-first private vault for photos, videos, documents and encrypted backups. No account. No cloud storage.</p><div class="project-tags"><span>iOS</span><span>Android</span><span>Biometrics</span><span>Privacy</span></div></div>
+            <div class="phone-mockup"><div class="phone-screen"><div class="mock-status"><span>9:41</span><span>● ●</span></div><div class="mock-lock">⌾</div><h4>Your private space.</h4><p>Protected on this device</p><div class="mock-folders"><i></i><i></i><i></i></div></div></div>
+          </article>
+          <article class="project reveal"><div class="project-art smart-home"><span class="house">⌂</span><span class="signal">)))</span></div><div class="project-copy"><div class="project-number">02 / IOT</div><h3>ONE Home</h3><p>Connect, monitor and remotely control smart-home devices and security cameras.</p><div class="project-tags"><span>iOS</span><span>IoT</span><span>IP Camera</span></div></div></article>
+          <article class="project reveal"><div class="project-art network"><span>ONE</span><div class="network-lines"></div></div><div class="project-copy"><div class="project-number">03 / NETWORK</div><h3>ONE Link</h3><p>Quick, approachable Wi-Fi and access-point management for VNPT customers.</p><div class="project-tags"><span>UIKit</span><span>Networking</span><span>Devices</span></div></div></article>
         </div>
-      </div>
-    </section>
-    <!-- /#skills -->
-    <section
-      id="experiences"
-      class="default-section"
-      data-scroll-reveal="enter from the bottom over .5s"
-    >
-      <div class="section-heading">
-        <h2 class="section-title">Experiences</h2>
-      </div>
-      <!-- /.section-heading -->
-      <div class="container">
-        <!-- /.experiences-container -->
-      </div>
-    </section>
-    <!-- /#experiences -->
-    <section
-      id="education"
-      class="default-section"
-      data-scroll-reveal="enter from the bottom over .5s"
-    >
-      <div class="section-heading">
-        <h2 class="section-title">Education</h2>
-      </div>
-      <!-- /.section-heading -->
-      <div class="container">
-        <div class="education-container">
-          <div class="education-items"></div>
-          <!-- /.education-items -->
+        <div class="apps-heading reveal"><h3>More independent apps.</h3><p>A selection of utility, education, productivity and creative apps released across the App Store and Google Play.</p></div>
+        <div class="app-grid">
+          <a class="app-card reveal" style="--app-color:#6c5ce7" href="https://apps.apple.com/in/app/mathematics-quiz-pdf/id6497404071" target="_blank" rel="noreferrer"><span class="app-icon">∑</span><h4>Mathematics: Quiz &amp; PDF</h4><p>Interactive quizzes and PDF tools for learning mathematics.</p></a>
+          <a class="app-card reveal" style="--app-color:#f39c12" href="https://apps.apple.com/in/app/sound-trainer-listen-better/id6497068502" target="_blank" rel="noreferrer"><span class="app-icon">♫</span><h4>Sound Trainer</h4><p>Ear-training exercises designed to improve critical listening skills.</p></a>
+          <a class="app-card reveal" style="--app-color:#16a085" href="https://apps.apple.com/in/app/server-sentinel-pinger/id6499138893" target="_blank" rel="noreferrer"><span class="app-icon">⌁</span><h4>Server Sentinel</h4><p>Host monitoring, health status and real-time server notifications.</p></a>
+          <a class="app-card reveal" style="--app-color:#e84393" href="https://apps.apple.com/in/app/tuner-trainer-beyond-limits/id6498151536" target="_blank" rel="noreferrer"><span class="app-icon">Hz</span><h4>Tuner Trainer</h4><p>A tuner for exploring xenharmonic and microtonal music.</p></a>
+          <a class="app-card reveal" style="--app-color:#0984e3" href="https://apps.apple.com/in/app/gradient-creator-flutter-tool/id6499068488" target="_blank" rel="noreferrer"><span class="app-icon">◐</span><h4>Gradient Creator</h4><p>A practical gradient and color-generation tool for Flutter creators.</p></a>
+          <a class="app-card reveal" style="--app-color:#00b894" href="https://apps.apple.com/in/app/habit-crafter/id6496008622" target="_blank" rel="noreferrer"><span class="app-icon">✓</span><h4>Habit Crafter</h4><p>Personal goals, tailored habits and everyday motivation.</p></a>
+          <a class="app-card reveal" style="--app-color:#d63031" href="https://apps.apple.com/in/app/motion-sensor-json-csv/id6499396038" target="_blank" rel="noreferrer"><span class="app-icon">↗</span><h4>Motion Sensor</h4><p>Record sensor data up to 200Hz and export it to JSON or CSV.</p></a>
+          <a class="app-card reveal" style="--app-color:#2d3436" href="https://play.google.com/store/apps/details?id=com.thiemjason.fastEncrypt" target="_blank" rel="noreferrer"><span class="app-icon">RSA</span><h4>FastEncrypt</h4><p>Simple RSA encryption and decryption for sensitive text.</p></a>
         </div>
-        <!-- /.education-container -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <script defer="defer" async="async" src="index_files/dist.js"></script>
+        <div class="store-links reveal">
+          <a class="button primary" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noreferrer">View all iOS apps <span>↗</span></a>
+          <a class="button ghost" href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noreferrer">View all Android apps <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="container">
+          <div class="section-label reveal"><span>04</span> Education</div>
+          <div class="education-grid">
+            <article class="education-card reveal"><div class="edu-year">2023 — PRESENT</div><div><h3>Master in Software Engineering</h3><p>VNU University of Engineering and Technology</p></div><span class="edu-arrow">↗</span></article>
+            <article class="education-card reveal"><div class="edu-year">2018 — 2023</div><div><h3>Engineer in Information Technology</h3><p>Thuy Loi University · Graduated with Excellence · GPA 3.63 / 4</p></div><span class="edu-arrow">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-kicker">HAVE A PROJECT IN MIND?</div>
+          <h2>Let's build something<br /><em>people love to use.</em></h2>
+          <a class="button light" href="mailto:nguyencaothiem@gmail.com">nguyencaothiem@gmail.com <span>↗</span></a>
+          <div class="contact-orb"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container"><a class="brand" href="#home">CT<span>.</span></a><p>© <span id="year"></span> Cao Thiem Nguyen</p><div><a href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:nguyencaothiem@gmail.com">Email</a></div></footer>
+    <script src="index_files/portfolio.js" defer></script>
   </body>
 </html>
