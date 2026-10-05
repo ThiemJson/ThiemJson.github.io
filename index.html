@@ -8,200 +8,165 @@
     <meta name="google-site-verification" content="HWHcY2hjisWw0UVMd49Ik7REdDkz0b8mpNjaamKFl-A" />
     <meta name="google-adsense-account" content="ca-pub-9031583899744313" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9031583899744313" crossorigin="anonymous"></script>
-    <meta name="description" content="Portfolio of Cao Thiem Nguyen, an iOS and mobile developer based in Hanoi." />
-    <meta name="theme-color" content="#07111f" />
-    <title>Cao Thiem Nguyen — iOS &amp; Mobile Developer</title>
+    <meta name="description" content="Cao Thiem Nguyen, an indie mobile developer in Hanoi. Maker of Classly, Orbwatch, LogCat Analyzer, Privault and more iOS &amp; Android apps." />
+    <meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121314" media="(prefers-color-scheme: dark)" />
+    <title>Cao Thiem Nguyen — Mobile Developer &amp; App Maker</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="index_files/portfolio.css" />
-    <style>
-      html, body { overflow-x: hidden; }
-      .portrait-monogram { position: relative; z-index: 2; width: 100%; height: 100%; display: grid; place-items: center; border-radius: 210px 210px 28px 28px; background: radial-gradient(circle at 68% 24%, rgba(255,255,255,.82), transparent 22%), linear-gradient(145deg, #dce7ff, #9df4d1); overflow: hidden; }
-      .portrait-monogram::before, .portrait-monogram::after { content: ""; position: absolute; border: 1px solid rgba(7,17,31,.12); border-radius: 50%; }
-      .portrait-monogram::before { width: 330px; height: 330px; right: -145px; top: -70px; box-shadow: 0 0 0 55px rgba(255,255,255,.13); }
-      .portrait-monogram::after { width: 220px; height: 220px; left: -100px; bottom: -35px; box-shadow: 0 0 0 40px rgba(77,112,255,.07); }
-      .portrait-monogram span { position: relative; z-index: 1; font: 800 clamp(76px, 10vw, 138px)/1 "Manrope", sans-serif; letter-spacing: -.1em; color: #07111f; transform: translateX(-.05em); }
-      .portrait-monogram span i { color: #4d70ff; font-style: normal; }
-      .store-links { display: flex; gap: 12px; flex-wrap: wrap; margin: 30px 0 0; }
-      .store-link { display: inline-flex; align-items: center; gap: 12px; padding: 13px 18px; border: 1px solid #dce2e8; border-radius: 15px; color: #07111f; text-decoration: none; background: #fff; font-weight: 700; transition: transform .2s, border-color .2s; }
-      .store-link:hover { transform: translateY(-2px); border-color: #4d70ff; }
-      .store-link b { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: #07111f; color: #7cf7c8; }
-      .store-link small { display: block; color: #5e6977; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; line-height: 1.2; }
-      .store-link span { line-height: 1.3; }
-      .apps-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin: 72px 0 24px; }
-      .apps-heading h3 { font: 800 clamp(28px, 4vw, 42px)/1.1 "Manrope", sans-serif; letter-spacing: -.04em; margin: 0; }
-      .apps-heading p { color: #5e6977; max-width: 430px; margin: 0; }
-      .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .app-card { min-height: 235px; padding: 24px; border: 1px solid #e2e7ec; border-radius: 20px; color: #07111f; text-decoration: none; display: flex; flex-direction: column; background: #f6f8fa; transition: transform .2s, box-shadow .2s; }
-      .app-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(7,17,31,.09); }
-      .app-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: var(--app-color, #4d70ff); color: #fff; font: 800 20px "Manrope", sans-serif; margin-bottom: auto; }
-      .app-icon-img, .featured-app-icon { object-fit: cover; border-radius: 22%; box-shadow: 0 10px 25px rgba(7,17,31,.14); }
-      .app-icon-img { width: 68px; height: 68px; margin-bottom: auto; }
-      .featured-app-icon { width: 82px; height: 82px; margin-bottom: 22px; }
-      .project-link { margin-top: 24px; color: #7cf7c8; text-decoration: none; font-weight: 700; }
-      .app-showcase { background: linear-gradient(145deg, #e9f0ff, #b9cafc); }
-      .app-showcase img { width: 150px; height: 150px; object-fit: cover; border-radius: 28%; box-shadow: 0 24px 52px rgba(31,57,128,.24); }
-      .project .project-link { color: #4d70ff; }
-      .project-featured .project-link { color: #7cf7c8; }
-      .project-wide { grid-column: 1 / -1; display: grid; grid-template-columns: .85fr 1.15fr; min-height: 360px; }
-      .project-wide .project-art { height: auto; min-height: 320px; }
-      .app-card h4 { font: 700 18px/1.25 "Manrope", sans-serif; margin: 24px 0 8px; }
-      .app-card p { color: #5e6977; font-size: 13px; line-height: 1.5; margin: 0; }
-      @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(2, 1fr); } .project-wide { display: flex; } .project-wide .project-art { min-height: 260px; } }
-      @media (max-width: 600px) { .apps-heading { align-items: start; flex-direction: column; } .app-grid { grid-template-columns: 1fr; } .app-card { min-height: 205px; } }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="index_files/site.css" />
   </head>
   <body>
-    <header class="site-header" id="home">
-      <nav class="nav container" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Cao Thiem Nguyen — home">CT<span>.</span></a>
-        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#work">Work</a>
-          <a href="#education">Education</a>
-          <a class="nav-cta" href="mailto:nguyencaothiem@gmail.com">Let's talk <span>↗</span></a>
-        </div>
-      </nav>
-    </header>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top"><img src="images/icon-192.png" alt="" width="34" height="34">Cao Thiem Nguyen</a>
+    <div class="links">
+      <a href="#top">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#apps">Apps</a>
+      <a href="#education">Education</a>
+      <a class="btn btn-ink" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-    <main>
-      <section class="hero container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="pulse"></span> Available for meaningful mobile projects</div>
-          <h1>I build mobile products that feel <em>effortless.</em></h1>
-          <p class="hero-lead">I'm Cao Thiem Nguyen, an iOS &amp; Mobile Developer in Hanoi crafting reliable applications across iOS, Android and Flutter.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">Explore my work <span>↓</span></a>
-            <a class="button ghost" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+<main id="top">
+  <section class="hero" id="about">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">About me</span>
+          <h1>I build mobile apps, and ship my own.</h1>
+          <p class="lead">I'm Cao Thiem Nguyen, an iOS &amp; mobile developer in Hanoi. I build iOS, Android and Flutter products for clients, and I design, build and publish apps of my own.</p>
+          <div class="actions">
+            <a class="btn btn-ink" href="#apps">See my apps</a>
+            <a class="btn btn-line" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-line" href="mailto:nguyencaothiem@gmail.com">Email me</a>
           </div>
-          <div class="hero-metrics" aria-label="Career highlights">
-            <div><strong>6+</strong><span>Years in mobile</span></div>
-            <div><strong>80+</strong><span>Self apps released</span></div>
-            <div><strong>20K+</strong><span>Total downloads</span></div>
-          </div>
+          <div class="facts"><span>6+ years in mobile</span><span>iOS · Android · Flutter</span><span>Based in Hanoi</span></div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="portrait-frame">
-            <div class="portrait-orbit orbit-one"></div>
-            <div class="portrait-orbit orbit-two"></div>
-            <div class="portrait-monogram" aria-label="Cao Thiem Nguyen"><span>CT<i>.</i></span></div>
-            <div class="floating-card card-role"><span>⌘</span><div><small>Currently</small><strong>Mobile Developer</strong></div></div>
-            <div class="floating-card card-place"><span>⌖</span><div><small>Based in</small><strong>Hanoi, Vietnam</strong></div></div>
+        <div class="hero-visual">
+          <div class="card profile">
+            <div class="profile-head"><img class="avatar" src="images/icon-192.png" alt="" width="64" height="64"><div><b>Cao Thiem Nguyen</b><span>Mobile Developer · NTQ Solution</span></div></div>
+            <div class="stats"><div><strong>80+</strong><span>Apps shipped</span></div><div><strong>20K+</strong><span>Downloads</span></div><div><strong>6+</strong><span>Years</span></div></div>
+            <div class="skills"><span>Swift</span><span>UIKit</span><span>Objective-C</span><span>Flutter</span><span>MVVM</span><span>RTC / VoIP</span><span>Jenkins</span><span>Fastlane</span><span>AdMob</span></div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="about-more">
+        <div class="card"><h3>At work</h3><p>I turn complex product requirements into focused, dependable apps: security cameras, smart-home and networking devices, social platforms, chat, voice/video calls, e-commerce and in-app payments.</p></div>
+        <div class="card"><h3>On my own</h3><p>I own the whole loop for my apps: product, design, code, store listings, ads and analytics. I care about clean architecture, performance and a smooth release process.</p></div>
+      </div>
+    </div>
+  </section>
 
-      <section class="logo-strip" aria-label="Technology focus">
-        <div class="marquee">
-          <span>SWIFT</span><i>✦</i><span>UIKIT</span><i>✦</i><span>OBJECTIVE-C</span><i>✦</i><span>FLUTTER</span><i>✦</i><span>COMBINE</span><i>✦</i><span>CI/CD</span><i>✦</i>
-          <span aria-hidden="true">SWIFT</span><i aria-hidden="true">✦</i><span aria-hidden="true">UIKIT</span><i aria-hidden="true">✦</i><span aria-hidden="true">OBJECTIVE-C</span><i aria-hidden="true">✦</i><span aria-hidden="true">FLUTTER</span><i aria-hidden="true">✦</i><span aria-hidden="true">COMBINE</span><i aria-hidden="true">✦</i><span aria-hidden="true">CI/CD</span><i aria-hidden="true">✦</i>
-        </div>
-      </section>
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Experience</span>
+        <h2>Where I've worked.</h2>
+        <p>Product teams, outsourcing projects and independent app development.</p>
+      </div>
+      <div class="timeline">
+        <article class="card job now"><div class="job-date">Sep 2024 — Now</div><div><h3>Mobile Developer</h3><h4>NTQ Solution JSC · Hanoi</h4><p>Full-time, on-site. Outsourcing projects for the company's clients across iOS, Android and Flutter.</p><ul class="points job-points"><li><span>Develop and implement software solutions based on client requirements.</span></li><li><span>Work on social media, real-time chat and voice-call (RTC) features with UIKit.</span></li><li><span>Fix bugs and maintain client apps after release.</span></li></ul></div></article>
+        <article class="card job"><div class="job-date">Mar 2024 — Sep 2024</div><div><h3>Middle iOS Developer</h3><h4>Rikkeisoft · Hanoi</h4><p>Full-time, on-site. Outsourcing on various projects for the company's clients.</p><ul class="points job-points"><li><span>Develop and implement software solutions based on client requirements.</span></li><li><span>Work on smart-home devices, e-commerce, social media, chat, voice/video calls and in-app payments.</span></li><li><span>Fix bugs, upgrade, submit and maintain apps, building UI with Interface Builder and Auto Layout.</span></li></ul></div></article>
+        <article class="card job"><div class="job-date">Sep 2023 — May 2024</div><div><h3>Indie Mobile Developer</h3><h4>Independent · Remote</h4><p>Built and released 80+ self-owned iOS, Android and Flutter apps, reaching more than 20,000 downloads.</p><ul class="points job-points"><li><span>Owned every step: idea, UI design, development, App Store / Google Play listings and releases.</span></li><li><span>Monetized with AdMob and in-app purchases, and iterated on apps from store analytics.</span></li></ul></div></article>
+        <article class="card job"><div class="job-date">Jul 2021 — Mar 2024</div><div><h3>iOS Developer</h3><h4>VNPT Technology · Hanoi</h4><p>Engineered apps that connect, configure and control VNPT security cameras, smart-home devices and networking hardware.</p><ul class="points job-points"><li><span>Worked on ONE Home, an app to connect, monitor and remotely control smart-home devices and IP cameras.</span></li><li><span>Worked on ONE Link, Wi-Fi and access-point management for VNPT customers.</span></li><li><span>Managed certificates, provisioning and CI/CD release pipelines with Jenkins and Fastlane.</span></li></ul></div></article>
+        <article class="card job"><div class="job-date">Sep 2020 — Aug 2021</div><div><h3>Mobile Developer</h3><h4>Teneocto Technologies · Hanoi</h4><p>Started my iOS career, then contributed to Japanese live-streaming and browser-game products.</p><ul class="points job-points"><li><span>Learned production iOS with MVC / MVVM, Auto Layout and memory management.</span></li><li><span>Collaborated with a Japanese client team on live-streaming features and releases.</span></li></ul></div></article>
+      </div>
+    </div>
+  </section>
 
-      <section class="section container" id="about">
-        <div class="section-label reveal"><span>01</span> About me</div>
-        <div class="about-grid">
-          <h2 class="section-title reveal">Mobile engineering, from the first commit to the store.</h2>
-          <div class="about-copy reveal">
-            <p>I turn complex product requirements into focused, dependable mobile experiences. My work spans security cameras, smart-home and networking devices, social platforms, chat and voice/video calls, e-commerce and in-app payments.</p>
-            <p>I care about thoughtful architecture, performance, memory management and a smooth release process—from certificates and provisioning to Jenkins and Fastlane.</p>
-            <div class="skill-cloud">
-              <span>Swift</span><span>UIKit</span><span>Objective-C</span><span>Flutter</span><span>MVVM / MVC</span><span>Auto Layout</span><span>RTC / VoIP</span><span>Git</span><span>App Store</span><span>AdMob</span>
-            </div>
-            <div class="store-links">
-              <a class="store-link" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noreferrer"><b></b><span><small>Explore on</small>Apple App Store</span></a>
-              <a class="store-link" href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noreferrer"><b>▶</b><span><small>Explore on</small>Google Play</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">My apps</span>
+        <h2>Products I build, ship and keep improving.</h2>
+        <p>Designed, engineered and released by me, end to end.</p>
+      </div>
 
-      <section class="section experience-section" id="experience">
-        <div class="container">
-          <div class="section-label reveal"><span>02</span> Experience</div>
-          <div class="section-heading-row reveal">
-            <h2 class="section-title">Where I've made an impact.</h2>
-            <p>A career built across product teams, outsourcing projects and independent app development.</p>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-date">SEP 2024 — NOW</div>
-              <div class="timeline-dot"></div>
-              <div class="timeline-content"><div class="company-mark">N</div><div><h3>Mobile Developer</h3><h4>NTQ Solution JSC · Hanoi</h4><p>Building iOS, Android and Flutter products for company clients across social media, real-time chat and voice calls; delivering features, fixes and ongoing maintenance.</p></div></div>
-            </article>
-            <article class="timeline-item reveal">
-              <div class="timeline-date">MAR — SEP 2024</div>
-              <div class="timeline-dot"></div>
-              <div class="timeline-content"><div class="company-mark">R</div><div><h3>Middle iOS Developer</h3><h4>Rikkeisoft · Hanoi</h4><p>Delivered outsourced mobile solutions across smart home, e-commerce, social, chat, voice/video calling and payments.</p></div></div>
-            </article>
-            <article class="timeline-item reveal">
-              <div class="timeline-date">SEP 2023 — MAY 2024</div>
-              <div class="timeline-dot"></div>
-              <div class="timeline-content"><div class="company-mark">F</div><div><h3>Mobile Developer</h3><h4>Independent · Remote</h4><p>Built and released 80+ self-owned iOS, Android and Flutter applications, reaching more than 20,000 downloads.</p></div></div>
-            </article>
-            <article class="timeline-item reveal">
-              <div class="timeline-date">JUL 2021 — MAR 2024</div>
-              <div class="timeline-dot"></div>
-              <div class="timeline-content"><div class="company-mark">V</div><div><h3>iOS Developer</h3><h4>VNPT Technology · Hanoi</h4><p>Engineered mobile apps that connect, configure and control security cameras, smart-home devices and networking hardware.</p></div></div>
-            </article>
-            <article class="timeline-item reveal">
-              <div class="timeline-date">SEP 2020 — AUG 2021</div>
-              <div class="timeline-dot"></div>
-              <div class="timeline-content"><div class="company-mark">T</div><div><h3>Mobile Developer</h3><h4>Teneocto Technologies · Hanoi</h4><p>Started in iOS engineering with MVC/MVVM, then contributed to Japanese live-streaming and browser-game products.</p></div></div>
-            </article>
-          </div>
+      <article class="app" id="classly" style="--app:#5E8B7E">
+        <div class="app-copy">
+          <div class="app-head"><img class="app-icon" src="images/apps/classly.png" alt="Classly app icon" width="64" height="64"><div><span class="kicker">01 · Core app</span><small>Education · iPhone, iPad &amp; Android</small></div></div>
+          <h3>Classly</h3>
+          <p class="app-lead">Attendance, timetable and deadlines in one calm, private place, so students always know what they can miss and what they can't.</p>
+          <ul class="points"><li><span><b>Today timeline</b>: mark every class in one tap or a swipe.</span></li><li><span><b>Insights per subject</b>: how many classes you can still miss, or need to attend to recover.</span></li><li><span><b>Planner, reminders and reports</b> for exams, assignments and weekly trends.</span></li><li><span><b>Private by design</b>: offline, no account, no location access.</span></li></ul>
+          <div class="tags"><span>Flutter</span><span>Offline-first</span><span>Home Screen widget</span><span>Google Calendar sync</span></div>
+          <div class="actions"><a class="btn btn-ink" href="https://apps.apple.com/app/id6760553317" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.230-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.37-3.68zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.670 1.37-.58.67-1.1 1.76-.96 2.79 1.01.08 2.05-.51 2.69-1.27z"/></svg>App Store</a><a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.thiemjason.classattendance" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.6 2.3 13.5 11.2 4.6 20.1c-.37-.2-.6-.6-.6-1.06V3.36c0-.46.23-.86.6-1.06zm10.1 10.1 2.4 2.4-10.3 5.85 7.9-8.25zm3.6-3.6 2.7 1.53c.75.43.75 1.510 0 1.94l-2.7 1.53-2.62-2.5 2.62-2.5zM6.8 2.9l10.3 5.85-2.4 2.4L6.8 2.9z"/></svg>Google Play</a><a class="btn btn-line" href="https://thiemjason-work.site/classly/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>Website</a></div>
         </div>
-      </section>
+        <div class="shots"><img src="images/apps/shots/classly-01_today.jpg" alt="Classly screenshot 1" width="416" height="900" loading="lazy"><img src="images/apps/shots/classly-02_insights.jpg" alt="Classly screenshot 2" width="416" height="900" loading="lazy"><img src="images/apps/shots/classly-04_planner.jpg" alt="Classly screenshot 3" width="416" height="900" loading="lazy"></div>
+      </article>
+      <article class="app reverse" id="orbwatch" style="--app:#C9831F">
+        <div class="app-copy">
+          <div class="app-head"><img class="app-icon" src="images/apps/orbwatch.png" alt="Orbwatch app icon" width="64" height="64"><div><span class="kicker">02 · Core app</span><small>Casual game · Focus training</small></div></div>
+          <h3>Orbwatch</h3>
+          <p class="app-lead">Follow the golden orb through the chaos. A calm eye-tracking game that sharpens attention and visual memory.</p>
+          <ul class="points"><li><span><b>Memorize, track, pick</b>: remember the target orbs, follow them as they bounce, then tap the right ones.</span></li><li><span><b>200 hand-balanced levels</b> across 4 chapters, plus Endless and a seeded Daily challenge.</span></li><li><span><b>Twists</b> like fog and new arena shapes keep every chapter fresh.</span></li><li><span><b>Deterministic physics</b>: every level replays exactly from its seed.</span></li></ul>
+          <div class="tags"><span>Flutter</span><span>Flame</span><span>Game design</span><span>AdMob</span></div>
+          <div class="actions"><a class="btn btn-ink" href="https://play.google.com/store/apps/details?id=com.thiemnc.eyetracker" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.6 2.3 13.5 11.2 4.6 20.1c-.37-.2-.6-.6-.6-1.06V3.36c0-.46.23-.86.6-1.06zm10.1 10.1 2.4 2.4-10.3 5.85 7.9-8.25zm3.6-3.6 2.7 1.53c.75.43.75 1.510 0 1.94l-2.7 1.53-2.62-2.5 2.62-2.5zM6.8 2.9l10.3 5.85-2.4 2.4L6.8 2.9z"/></svg>Google Play</a></div>
+        </div>
+        <div class="shots"><img src="images/apps/shots/orbwatch-01_memorize.jpg" alt="Orbwatch screenshot 1" width="416" height="900" loading="lazy"><img src="images/apps/shots/orbwatch-02_tracking.jpg" alt="Orbwatch screenshot 2" width="416" height="900" loading="lazy"><img src="images/apps/shots/orbwatch-04_fog.jpg" alt="Orbwatch screenshot 3" width="416" height="900" loading="lazy"></div>
+      </article>
+      <article class="app" id="logcat" style="--app:#D9692A">
+        <div class="app-copy">
+          <div class="app-head"><img class="app-icon" src="images/apps/logcat.webp" alt="LogCat Analyzer app icon" width="64" height="64"><div><span class="kicker">03 · Core app</span><small>Developer tool · iPhone &amp; iPad</small></div></div>
+          <h3>LogCat Analyzer</h3>
+          <p class="app-lead">Analyze Android log data right on your iPhone or iPad. Find crashes, ANRs and performance issues, no computer required.</p>
+          <ul class="points"><li><span><b>Issue detection</b> for crashes, ANR, memory pressure, network errors, StrictMode and retry loops.</span></li><li><span><b>Explain &amp; fix</b>: likely root cause from the stack trace, with troubleshooting steps.</span></li><li><span><b>Crash timeline</b> with grouped exceptions, severity and exportable reports.</span></li><li><span><b>Search &amp; filter</b> by level, package, tag or keyword.</span></li></ul>
+          <div class="tags"><span>iOS</span><span>iPadOS</span><span>Log parsing</span><span>Developer tools</span></div>
+          <div class="actions"><a class="btn btn-ink" href="https://apps.apple.com/in/app/logcat-analyzer-debug-toolkit/id6764280965" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.230-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.37-3.68zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.670 1.37-.58.67-1.1 1.76-.96 2.79 1.01.08 2.05-.51 2.69-1.27z"/></svg>App Store</a></div>
+        </div>
+        <div class="shots"><img src="images/apps/shots/logcat-01.jpg" alt="LogCat Analyzer screenshot 1" width="416" height="900" loading="lazy"><img src="images/apps/shots/logcat-02.jpg" alt="LogCat Analyzer screenshot 2" width="416" height="900" loading="lazy"><img src="images/apps/shots/logcat-03.jpg" alt="LogCat Analyzer screenshot 3" width="416" height="900" loading="lazy"></div>
+      </article>
+      <article class="app reverse" id="privault" style="--app:#2E8C7A">
+        <div class="app-copy">
+          <div class="app-head"><img class="app-icon" src="images/apps/privault.png" alt="Privault app icon" width="64" height="64"><div><span class="kicker">04 · Core app</span><small>Privacy · iPhone &amp; Android</small></div></div>
+          <h3>Privault</h3>
+          <p class="app-lead">A local-first private vault for photos, videos, documents and other files. No account, no cloud sync.</p>
+          <ul class="points"><li><span><b>Collections</b> for different personal spaces, with import from Photos, Files and share flows.</span></li><li><span><b>PIN and biometric lock</b> to keep the vault private.</span></li><li><span><b>Preview, search, sort and move</b> files, with Trash before permanent removal.</span></li><li><span><b>Encrypted backup</b> export and import with Privault PRO.</span></li></ul>
+          <div class="tags"><span>iOS</span><span>Android</span><span>Biometrics</span><span>Local-first</span></div>
+          <div class="actions"><a class="btn btn-ink" href="https://apps.apple.com/in/app/privault-photo-file-locker-pro/id6787062951" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.230-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.37-3.68zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.670 1.37-.58.67-1.1 1.76-.96 2.79 1.01.08 2.05-.51 2.69-1.27z"/></svg>App Store</a><a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.thiemjason.privatelocker" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.6 2.3 13.5 11.2 4.6 20.1c-.37-.2-.6-.6-.6-1.06V3.36c0-.46.23-.86.6-1.06zm10.1 10.1 2.4 2.4-10.3 5.85 7.9-8.25zm3.6-3.6 2.7 1.53c.75.43.75 1.510 0 1.94l-2.7 1.53-2.62-2.5 2.62-2.5zM6.8 2.9l10.3 5.85-2.4 2.4L6.8 2.9z"/></svg>Google Play</a><a class="btn btn-line" href="https://www.privaultapp.store/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>Website</a></div>
+        </div>
+        <div class="shots"><img src="images/apps/shots/privault-01.jpg" alt="Privault screenshot 1" width="416" height="900" loading="lazy"><img src="images/apps/shots/privault-02.jpg" alt="Privault screenshot 2" width="416" height="900" loading="lazy"><img src="images/apps/shots/privault-03.jpg" alt="Privault screenshot 3" width="416" height="900" loading="lazy"></div>
+      </article>
+      <div class="more-head"><h3>More apps</h3><p>Productivity, education and news apps on both stores.</p></div>
+      <div class="app-grid"><a class="card mini" href="https://apps.apple.com/in/app/docsy-document-scanner/id6765682727" target="_blank" rel="noopener"><img src="images/apps/docsy.webp" alt="Docsy app icon" width="52" height="52" loading="lazy"><h4>Docsy</h4><p>A fast document scanner for capturing and organizing documents on the go.</p><span>App Store ↗</span></a><a class="card mini" href="https://apps.apple.com/in/app/math-riddles-iq-brain-boost/id6502156385" target="_blank" rel="noopener"><img src="images/apps/math-riddles.webp" alt="Math Riddles app icon" width="52" height="52" loading="lazy"><h4>Math Riddles</h4><p>IQ puzzles and math challenges designed to sharpen the brain.</p><span>App Store ↗</span></a><a class="card mini" href="https://apps.apple.com/in/app/flutter-tools-ui-builder-pro/id6499068488" target="_blank" rel="noopener"><img src="images/apps/flutter-tools.webp" alt="Flutter Tools app icon" width="52" height="52" loading="lazy"><h4>Flutter Tools</h4><p>A visual UI builder and toolkit for creating Flutter interfaces faster.</p><span>App Store ↗</span></a><a class="card mini" href="https://play.google.com/store/apps/details?id=com.thiemjason.news.vn" target="_blank" rel="noopener"><img src="images/apps/vn-news.webp" alt="Tin Tức Việt Nam app icon" width="52" height="52" loading="lazy"><h4>Tin Tức Việt Nam</h4><p>A streamlined reader bringing popular Vietnamese news sources together.</p><span>Google Play ↗</span></a></div>
+      <div class="actions all-apps"><a class="btn btn-ink" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.230-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.37-3.68zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.670 1.37-.58.67-1.1 1.76-.96 2.79 1.01.08 2.05-.51 2.69-1.27z"/></svg>All apps on the App Store</a><a class="btn btn-line" href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.6 2.3 13.5 11.2 4.6 20.1c-.37-.2-.6-.6-.6-1.06V3.36c0-.46.23-.86.6-1.06zm10.1 10.1 2.4 2.4-10.3 5.85 7.9-8.25zm3.6-3.6 2.7 1.53c.75.43.75 1.510 0 1.94l-2.7 1.53-2.62-2.5 2.62-2.5zM6.8 2.9l10.3 5.85-2.4 2.4L6.8 2.9z"/></svg>All apps on Google Play</a></div>
+    </div>
+  </section>
 
-      <section class="section container" id="work">
-        <div class="section-label reveal"><span>03</span> Selected work</div>
-        <div class="section-heading-row reveal"><h2 class="section-title">Products in the real world.</h2><p>Two products I actively build, operate and grow beyond the app stores.</p></div>
-        <div class="project-grid">
-          <article class="project project-featured reveal">
-            <div class="project-copy"><img class="featured-app-icon" src="images/apps/privault.png" alt="Privault app icon" /><div class="project-number">01 / PRIVACY</div><h3>Privault</h3><p>A local-first private vault for photos, videos, documents and encrypted backups. No account. No cloud storage.</p><div class="project-tags"><span>iOS</span><span>Android</span><span>Biometrics</span><span>Privacy</span></div><a class="project-link" href="https://www.privaultapp.store/" target="_blank" rel="noreferrer">Visit Privault ↗</a></div>
-            <div class="phone-mockup"><div class="phone-screen"><div class="mock-status"><span>9:41</span><span>● ●</span></div><div class="mock-lock">⌾</div><h4>Your private space.</h4><p>Protected on this device</p><div class="mock-folders"><i></i><i></i><i></i></div></div></div>
-          </article>
-          <article class="project project-wide reveal"><div class="project-art app-showcase"><img src="images/apps/attendmate.png" alt="AttendMate app icon" /></div><div class="project-copy"><div class="project-number">02 / EDUCATION</div><h3>AttendMate</h3><p>A focused attendance and timetable companion that helps students track classes, schedules and attendance with less friction.</p><div class="project-tags"><span>Mobile</span><span>Education</span><span>Product</span></div><a class="project-link" href="https://thiemjason-work.site/attendmate-website/" target="_blank" rel="noreferrer">Visit AttendMate ↗</a></div></article>
-        </div>
-        <div class="apps-heading reveal"><h3>Signature apps.</h3><p>Products I designed and shipped across productivity, developer tools, education, privacy and news.</p></div>
-        <div class="app-grid">
-          <a class="app-card reveal" href="https://apps.apple.com/in/app/logcat-analyzer-debug-toolkit/id6764280965" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/logcat.webp" alt="Logcat Analyzer app icon" /><h4>Logcat Analyzer</h4><p>A mobile debugging toolkit for inspecting, filtering and understanding logs.</p></a>
-          <a class="app-card reveal" href="https://apps.apple.com/in/app/docsy-document-scanner/id6765682727" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/docsy.webp" alt="Docsy app icon" /><h4>Docsy</h4><p>A fast document scanner for capturing and organizing documents on the go.</p></a>
-          <a class="app-card reveal" href="https://apps.apple.com/in/app/math-riddles-iq-brain-boost/id6502156385" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/math-riddles.webp" alt="Math Riddles app icon" /><h4>Math Riddles</h4><p>IQ puzzles and mathematical challenges designed to sharpen the brain.</p></a>
-          <a class="app-card reveal" href="https://play.google.com/store/apps/details?id=com.thiemjason.news.vn" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/vn-news.webp" alt="Tin Tức Việt Nam app icon" /><h4>Tin Tức Việt Nam</h4><p>A streamlined news reader bringing popular Vietnamese sources together.</p></a>
-          <a class="app-card reveal" href="https://apps.apple.com/in/app/flutter-tools-ui-builder-pro/id6499068488" target="_blank" rel="noreferrer"><img class="app-icon-img" src="images/apps/flutter-tools.webp" alt="Flutter Tools app icon" /><h4>Flutter Tools</h4><p>A visual UI builder and practical toolkit for creating Flutter interfaces faster.</p></a>
-        </div>
-        <div class="store-links reveal">
-          <a class="button primary" href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noreferrer">View all iOS apps <span>↗</span></a>
-          <a class="button ghost" href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noreferrer">View all Android apps <span>↗</span></a>
-        </div>
-      </section>
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Education</span><h2>Where I studied.</h2></div>
+      <div class="edu-grid">
+        <article class="card edu"><small>2023 — Present</small><h3>Master in Software Engineering</h3><p>VNU University of Engineering and Technology</p></article>
+        <article class="card edu"><small>2018 — 2023</small><h3>Engineer in Information Technology</h3><p>Thuy Loi University · Graduated with Excellence · GPA 3.63 / 4</p></article>
+      </div>
+    </div>
+  </section>
 
-      <section class="section education-section" id="education">
-        <div class="container">
-          <div class="section-label reveal"><span>04</span> Education</div>
-          <div class="education-grid">
-            <article class="education-card reveal"><div class="edu-year">2023 — PRESENT</div><div><h3>Master in Software Engineering</h3><p>VNU University of Engineering and Technology</p></div><span class="edu-arrow">↗</span></article>
-            <article class="education-card reveal"><div class="edu-year">2018 — 2023</div><div><h3>Engineer in Information Technology</h3><p>Thuy Loi University · Graduated with Excellence · GPA 3.63 / 4</p></div><span class="edu-arrow">↗</span></article>
-          </div>
-        </div>
-      </section>
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <img src="images/icon-192.png" alt="" width="84" height="84">
+        <h2>Have an app idea or a project in mind?</h2>
+        <p>I'm open to mobile work, collaborations and feedback on my apps.</p>
+        <div class="actions"><a class="btn btn-ink" href="mailto:nguyencaothiem@gmail.com">nguyencaothiem@gmail.com</a><a class="btn btn-line" href="contactus.html">Contact form</a></div>
+      </div>
+    </div>
+  </section>
+</main>
 
-      <section class="contact container" id="contact">
-        <div class="contact-card reveal">
-          <div class="contact-kicker">HAVE A PROJECT IN MIND?</div>
-          <h2>Let's build something<br /><em>people love to use.</em></h2>
-          <a class="button light" href="mailto:nguyencaothiem@gmail.com">nguyencaothiem@gmail.com <span>↗</span></a>
-          <div class="contact-orb"></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer container"><a class="brand" href="#home">CT<span>.</span></a><p>© <span id="year"></span> Cao Thiem Nguyen</p><div><a href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:nguyencaothiem@gmail.com">Email</a></div></footer>
-    <script src="index_files/portfolio.js" defer></script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <span>© <span id="year">2026</span> Cao Thiem Nguyen</span>
+      <nav class="footer-links" aria-label="Footer"><a href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noopener">LinkedIn</a><a href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noopener">App Store</a><a href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noopener">Google Play</a><a href="mailto:nguyencaothiem@gmail.com">Email</a></nav>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   </body>
 </html>

@@ -1,0 +1,150 @@
+/* Portfolio — palette and components follow the Classly website (thiemjason-work.site/classly). */
+:root{
+  --bg:#F7F7F5;--card:#FFFFFF;--variant:#EDEDEA;--line:#E6E6E1;
+  --ink:#1B1C1E;--muted:#6B6E73;--sage:#5E8B7E;--sage-soft:#E4EEEA;
+  --radius:20px;--max:1120px;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121314;--card:#1C1D1F;--variant:#26272A;--line:#2C2D30;
+  --ink:#ECECEA;--muted:#9A9DA3;--sage:#8FB8AA;--sage-soft:#1F2D29;}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(100% - 32px,var(--max));margin-inline:auto}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.2px}
+.brand img{width:34px;height:34px;border-radius:9px}
+.links{display:flex;align-items:center;gap:26px;font-size:15px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 20px;font-size:15px;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-ink{background:var(--ink);color:var(--bg)}
+.links .btn-ink{color:var(--bg)}
+.btn-line{border:1px solid var(--line);background:var(--card)}
+.btn svg{width:20px;height:20px;flex:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Type */
+.eyebrow,.kicker{color:var(--sage);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-1.6px;margin:16px 0 18px}
+h2{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.9px;margin:10px 0 12px}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:560px;margin:0 0 30px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;color:var(--muted);font-size:14px}
+.facts span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--sage);margin-right:8px;transform:translateY(-1px)}
+
+section{padding:88px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head p{color:var(--muted);font-size:18px;margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+
+/* Hero / about */
+.hero{padding:84px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-visual{position:relative;padding:28px}
+.hero-visual::before{content:"";position:absolute;inset:0;border-radius:40px;background:var(--sage-soft)}
+.profile{position:relative;z-index:1;display:grid;gap:18px}
+.profile-head{display:flex;align-items:center;gap:16px}
+.avatar{width:64px;height:64px;border-radius:18px;flex:none}
+.profile-head b{display:block;font-size:18px;line-height:1.3}
+.profile-head span{color:var(--muted);font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stats div{background:var(--variant);border-radius:14px;padding:14px 10px;text-align:center}
+.stats strong{display:block;font-size:24px;letter-spacing:-.6px;line-height:1.1}
+.stats span{font-size:12px;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--variant)}
+.about-more{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
+.about-more h3{font-size:18px;margin:0 0 6px;letter-spacing:-.2px}
+.about-more p{margin:0;color:var(--muted);font-size:15px}
+
+/* Experience */
+.timeline{display:grid;gap:12px}
+.job{display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start}
+.job-date{color:var(--muted);font-size:14px;font-weight:600;padding-top:2px}
+.job h3{font-size:18px;margin:0;letter-spacing:-.2px}
+.job h4{margin:2px 0 8px;font-size:15px;font-weight:500;color:var(--sage)}
+.job p{margin:0;color:var(--muted);font-size:15px}
+.job.now{border-color:var(--sage)}
+
+/* Apps */
+.app{--app:var(--sage);display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:32px;padding:40px;margin-bottom:20px;scroll-margin-top:88px}
+.app.reverse .app-copy{order:2}
+.app-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.app-icon{width:64px;height:64px;border-radius:15px;border:1px solid var(--line)}
+.app-head .kicker{color:var(--app)}
+.app-head small{display:block;color:var(--muted);font-size:14px}
+.app h3{font-size:clamp(30px,3.6vw,40px);line-height:1.08;letter-spacing:-.9px;margin:0 0 10px}
+.app-lead{color:var(--muted);font-size:17px;margin:0 0 20px}
+.points{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}
+.points li{display:flex;gap:12px;font-size:15px;color:var(--muted)}
+.points li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--app);background:color-mix(in srgb,var(--app) 16%,transparent);margin-top:1px}
+.points b{color:var(--ink);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tags span{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--variant);color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px;border-radius:24px;background:color-mix(in srgb,var(--app) 14%,var(--bg))}
+.shots img{width:100%;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+
+.more-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:64px 0 20px}
+.more-head h3{font-size:24px;letter-spacing:-.4px;margin:0}
+.more-head p{color:var(--muted);margin:0}
+.app-grid{display:flex;flex-wrap:wrap;gap:16px}
+.mini{flex:1 1 220px;display:flex;flex-direction:column;gap:12px;text-decoration:none;transition:transform .15s ease}
+.mini:hover{transform:translateY(-2px)}
+.mini img{width:52px;height:52px;border-radius:13px;object-fit:cover}
+.mini h4{margin:0;font-size:17px;letter-spacing:-.2px}
+.mini p{margin:0;color:var(--muted);font-size:14px;flex:1}
+.mini span{font-size:14px;font-weight:600;color:var(--sage)}
+.all-apps{margin-top:24px}
+
+/* Education */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.edu small{color:var(--muted);font-weight:600;font-size:13px}
+.edu h3{font-size:18px;margin:6px 0 4px;letter-spacing:-.2px}
+.edu p{margin:0;color:var(--muted);font-size:15px}
+
+/* CTA */
+.cta{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:32px;padding:64px 24px}
+.cta img{width:84px;height:84px;border-radius:20px;margin:0 auto 18px}
+.cta p{color:var(--muted);max-width:520px;margin:0 auto 26px}
+.cta .actions{justify-content:center}
+
+/* Footer */
+.site-footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:28px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{color:var(--ink)}
+
+@media (max-width:900px){
+  .links a:not(.btn){display:none}
+  .hero{padding:48px 0 24px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .about-more,.edu-grid{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:6px}
+  .app{grid-template-columns:1fr;padding:24px;gap:28px;border-radius:24px}
+  .app.reverse .app-copy{order:0}
+  .more-head{flex-direction:column;align-items:start}
+  section{padding:64px 0}
+}
+@media (max-width:560px){
+  .btn{padding:11px 16px}
+  .hero-visual{padding:16px}
+  .hero-visual::before{border-radius:28px}
+  .shots{padding:12px;gap:8px;border-radius:18px}
+  .shots img{border-radius:10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.mini{transition:none}}
+.job-points{margin:12px 0 0;gap:6px}
+.job-points li{font-size:14px}
+.job-points li::before{width:18px;height:18px;font-size:10px;--app:var(--sage)}
