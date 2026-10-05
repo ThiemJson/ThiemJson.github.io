@@ -148,3 +148,7 @@ section{padding:88px 0}
 .job-points{margin:12px 0 0;gap:6px}
 .job-points li{font-size:14px}
 .job-points li::before{width:18px;height:18px;font-size:10px;--app:var(--sage)}
+.stats-note{margin:-6px 0 0;text-align:center;color:var(--muted);font-size:13px}
+.app-stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.app-stats span{font-size:13px;color:var(--muted);padding:4px 12px;border-radius:999px;border:1px solid var(--line)}
+.app-stats b{color:var(--app);font-weight:700}
