@@ -1,38 +1,88 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Cao Thiem Nguyen for iOS, Android, Flutter, and mobile product development." /><meta name="theme-color" content="#07111f" />
-  <title>Contact — Cao Thiem Nguyen</title><link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="index_files/portfolio.css" /><link rel="stylesheet" href="index_files/contact.css" />
-</head>
-<body class="contact-page">
-  <header class="site-header"><nav class="nav container" aria-label="Primary navigation">
-    <a class="brand" href="index.html" aria-label="Cao Thiem Nguyen — home">CT<span>.</span></a>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <div class="nav-links"><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#work">Work</a><a class="nav-cta active" href="contactus.html" aria-current="page">Contact <span>↗</span></a></div>
-  </nav></header>
-  <main>
-    <section class="contact-hero container">
-      <div class="contact-intro reveal"><div class="eyebrow"><span class="pulse"></span> Available for select projects</div><h1>Have an idea?<br /><em>Let’s make it real.</em></h1><p>I’m always happy to talk about thoughtful mobile products, engineering challenges, or opportunities to build something useful together.</p><div class="availability"><span></span><div><strong>Usually replies within 1–2 business days</strong><small>Based in Hanoi · GMT+7</small></div></div></div>
-      <div class="contact-panel reveal"><div class="panel-head"><span>START A CONVERSATION</span><span>01</span></div>
-        <form id="contact-form"><div class="field-row">
-          <label><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="Jane Smith" required /></label>
-          <label><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="jane@company.com" required /></label>
-        </div><label><span>What can I help with?</span><select name="subject"><option>Mobile app development</option><option>Freelance collaboration</option><option>Job opportunity</option><option>Product feedback</option><option>Something else</option></select></label>
-        <label><span>Tell me a little about your project</span><textarea name="message" rows="5" placeholder="The product, timeline, and what success looks like…" required></textarea></label>
-        <button class="submit-button" type="submit"><span>Send message</span><span aria-hidden="true">↗</span></button><p class="form-note" id="form-note">Your email app will open with this message ready to send.</p></form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Cao Thiem Nguyen for iOS, Android, Flutter and mobile product development." />
+    <meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121314" media="(prefers-color-scheme: dark)" />
+    <title>Contact — Cao Thiem Nguyen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="index_files/site.css" />
+  </head>
+  <body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="images/icon-192.png" alt="" width="34" height="34">Cao Thiem Nguyen</a>
+    <div class="links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#apps">Apps</a>
+      <a href="index.html#education">Education</a>
+      <a class="btn btn-ink" href="contactus.html" aria-current="page">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Contact</span>
+          <h1>Have an idea? Let's make it real.</h1>
+          <p class="lead">I'm always happy to talk about thoughtful mobile products, engineering challenges, or opportunities to build something useful together.</p>
+          <div class="actions">
+            <a class="btn btn-ink" href="mailto:nguyencaothiem@gmail.com">Email me</a>
+            <a class="btn btn-line" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="facts"><span>Replies within 1–2 business days</span><span>Based in Hanoi · GMT+7</span><span>Open to select projects</span></div>
+        </div>
+        <div class="hero-visual">
+          <form class="card contact-form" id="contact-form">
+            <div class="form-head"><b>Start a conversation</b><span>Tell me a bit about what you're building.</span></div>
+            <div class="field-row">
+              <label class="field"><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="Jane Smith" required></label>
+              <label class="field"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="jane@company.com" required></label>
+            </div>
+            <label class="field"><span>What can I help with?</span><select name="subject"><option>Mobile app development</option><option>Freelance collaboration</option><option>Job opportunity</option><option>Product feedback</option><option>Something else</option></select></label>
+            <label class="field"><span>Your message</span><textarea name="message" rows="5" placeholder="The product, timeline, and what success looks like…" required></textarea></label>
+            <button class="btn btn-ink" type="submit">Send message</button>
+            <p class="form-note" id="form-note" aria-live="polite">Your email app will open with this message ready to send.</p>
+          </form>
+        </div>
       </div>
-    </section>
-    <section class="contact-options container" aria-label="Other ways to connect"><div class="section-label reveal"><span>02</span> Prefer another channel?</div><div class="channel-grid">
-      <a class="channel-card reveal" href="mailto:nguyencaothiem@gmail.com"><span class="channel-icon">@</span><div><small>Email</small><strong>nguyencaothiem@gmail.com</strong></div><span class="channel-arrow">↗</span></a>
-      <a class="channel-card reveal" href="tel:+84338456469"><span class="channel-icon">⌕</span><div><small>Phone</small><strong>+84 338 456 469</strong></div><span class="channel-arrow">↗</span></a>
-      <a class="channel-card reveal" href="https://github.com/ThiemJson" target="_blank" rel="noreferrer"><span class="channel-icon">&lt;/&gt;</span><div><small>GitHub</small><strong>github.com/ThiemJson</strong></div><span class="channel-arrow">↗</span></a>
-      <a class="channel-card reveal" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noreferrer"><span class="channel-icon">in</span><div><small>LinkedIn</small><strong>Cao Thiem Nguyen</strong></div><span class="channel-arrow">↗</span></a>
-    </div></section>
-  </main>
-  <footer class="footer container"><a class="brand" href="index.html">CT<span>.</span></a><p>© <span id="year"></span> Cao Thiem Nguyen</p><div><a href="index.html#work">Work</a><a href="mailto:nguyencaothiem@gmail.com">Email</a></div></footer>
-  <script src="index_files/contact.js" defer></script>
-</body></html>
+    </div>
+  </section>
+
+  <section id="channels">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Other channels</span>
+        <h2>Prefer another way to reach me?</h2>
+        <p>Pick whichever is easiest for you.</p>
+      </div>
+      <div class="app-grid">
+        <a class="card mini channel" href="mailto:nguyencaothiem@gmail.com"><span class="channel-icon" aria-hidden="true">@</span><h4>Email</h4><p>nguyencaothiem@gmail.com</p><span>Send an email ↗</span></a>
+        <a class="card mini channel" href="tel:+84338456469"><span class="channel-icon" aria-hidden="true">☎</span><h4>Phone</h4><p>+84 338 456 469</p><span>Call ↗</span></a>
+        <a class="card mini channel" href="https://github.com/ThiemJson" target="_blank" rel="noopener"><span class="channel-icon" aria-hidden="true">&lt;/&gt;</span><h4>GitHub</h4><p>github.com/ThiemJson</p><span>View profile ↗</span></a>
+        <a class="card mini channel" href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noopener"><span class="channel-icon" aria-hidden="true">in</span><h4>LinkedIn</h4><p>Cao Thiem Nguyen</p><span>Connect ↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <span>© <span id="year">2026</span> Cao Thiem Nguyen</span>
+      <nav class="footer-links" aria-label="Footer"><a href="https://www.linkedin.com/in/cao-thiem-nguyen-628945206/" target="_blank" rel="noopener">LinkedIn</a><a href="https://apps.apple.com/in/developer/thiem-nguyen/id1658699065" target="_blank" rel="noopener">App Store</a><a href="https://play.google.com/store/apps/dev?id=7615257913038978290" target="_blank" rel="noopener">Google Play</a><a href="mailto:nguyencaothiem@gmail.com">Email</a></nav>
+    </div>
+  </div>
+</footer>
+<script src="index_files/contact.js" defer></script>
+  </body>
+</html>
