@@ -1,0 +1,5 @@
+# Jekyll skips dot-folders unless they are listed here. .well-known holds the
+# files that let Classly's links open the app (iOS Universal Links and Android
+# App Links); see class-attence/docs/deep-links.md.
+include:
+  - .well-known

@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["A7Q5J9K3AS.com.thiemjason.classattendance"],
+        "components": [
+          { "/": "/classly/open", "comment": "Classly: open the app" },
+          { "/": "/classly/open/*", "comment": "Classly: open a screen of the app" }
+        ]
+      }
+    ]
+  }
+}

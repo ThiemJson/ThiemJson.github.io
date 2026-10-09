@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.thiemjason.classattendance",
+      "sha256_cert_fingerprints": [
+        "D3:32:9F:00:24:43:8C:2A:71:B9:AC:93:06:46:CD:98:D8:38:6B:89:DD:96:33:C6:9B:D7:4D:E5:C9:8A:AD:02",
+        "DE:9F:E7:25:04:CA:CE:BC:C7:23:2F:7E:79:9F:1B:DA:F8:BD:E1:CE:A3:E3:80:E7:F2:AD:B2:01:93:EA:5F:58",
+        "0E:47:A4:06:33:0B:EC:4E:96:8D:91:97:F2:64:E0:55:D3:B9:47:34:DD:C0:58:25:A3:F3:AE:AC:BF:0F:7A:9B"
+      ]
+    }
+  }
+]
