@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thiemjason-work.site/classly/sitemap.xml
