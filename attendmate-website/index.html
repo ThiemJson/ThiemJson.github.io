@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AttendMate is now Classly</title>
+  <meta name="description" content="AttendMate is now Classly. Continue to the Classly attendance tracker website.">
+  <link rel="canonical" href="https://thiemjason-work.site/classly/">
+  <meta http-equiv="refresh" content="0;url=https://thiemjason-work.site/classly/">
+  <script>
+    (() => {
+      const destination = new URL('https://thiemjason-work.site/classly/');
+      destination.search = window.location.search;
+      destination.hash = window.location.hash;
+      window.location.replace(destination.href);
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      --bg: #f7f7f5;
+      --card: #fff;
+      --ink: #1b1c1e;
+      --muted: #6b6e73;
+      --line: #e6e6e1;
+      --sage: #5e8b7e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121314;
+        --card: #1c1d1f;
+        --ink: #ececea;
+        --muted: #9a9da3;
+        --line: #2c2d30;
+        --sage: #8fb8aa;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    main {
+      width: min(100%, 560px);
+      padding: 36px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+      text-align: center;
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--ink);
+      color: var(--bg);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(28px, 7vw, 40px); line-height: 1.1; }
+    p { margin: 0 0 24px; color: var(--muted); }
+    a { display: inline-block; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 700; text-decoration: none; }
+    a:focus-visible { outline: 3px solid var(--sage); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">C</div>
